@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <title>ES6 HW</title>
+  </head>
+  <body>
+    <script type="module" src="./index.js"></script>
+
+    <div class="flex w-full h-screen">
+      <div class="mx-auto mt-20 text-black w-2/3">
+        <div class="flex flex-col">
+          <div class="flex justify-center">
+            <button
+              class="w-24 bg-gray-100 border-2 rounded ml-1"
+              onclick="handleNumberOne()"
+            >
+              №1
+            </button>
+            <button
+              class="w-24 bg-gray-100 border-2 rounded ml-1"
+              onclick="handleNumberTwo()"
+            >
+              №2
+            </button>
+            <button
+              class="w-24 bg-gray-100 border-2 rounded ml-1"
+              onclick="handleNumberThree()"
+            >
+              №3
+            </button>
+          </div>
+
+          <div
+            class="bg-red-100 text-black border-2 border-red-200 w-auto h-2/3 mt-10 p-2"
+          >
+            <h1 class="text-center pb-6 text-xl">Result</h1>
+            <div id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
